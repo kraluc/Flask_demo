@@ -21,7 +21,7 @@
       {% endif %}
 
       <ul>
-          {% for key, items in greetings.items() %}
+          {% for key, value in greetings.items() %}
           <li>{{ key }} says {{ value }}</li>
           {% endfor %}
       </ul>

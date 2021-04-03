@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SJ DCRS static lab</title>
+    </head>
+    <body>
+        {% if name %}
+        <h1>SJ DCRS Static Lab</h1>
+        {% else %}
+        <h1> Hello there!</h1>
+        {% endif %}
+
+        <ul>
+        {% for key, value in greetings.items() %}
+            <li>{{ key }} is at {{ value }}</li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
